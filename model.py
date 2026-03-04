@@ -17,7 +17,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 # You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
 
-# %% [code]
+
 import pandas as pd
 import streamlit as st
 import joblib
@@ -28,7 +28,7 @@ model = joblib.load("rfiris.pkl")
 st.title("IRIS FLOWER CLASSIFICATION APPLICATION")
 
 
-ST.WRITE("Predict the species of an Iris Flower Using a Random Forest Using a Random Forest Model")
+st.write("Predict the species of an Iris Flower Using a Random Forest Using a Random Forest Model")
 
 
 form = st.form("iris form")
@@ -82,7 +82,7 @@ if submit_button:
         "petal_length(cm)":[petal_length],
         "petal_width(cm)":[petal_width]
     })
-prediction = model.predict(input_data)
+    prediction = model.predict(input_data)
 
 
     st.subheader("prediction Result")
