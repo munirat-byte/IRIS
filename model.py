@@ -69,7 +69,7 @@ if submit_button:
 		"Petal_width (cm)" : [petal_width]
 
 		})
-	prediction = model.predict(input_data)
+	prediction = model.predict(input_data.values)
 
 
 	st.subheader("Prediction Result")
