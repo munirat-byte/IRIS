@@ -7,7 +7,7 @@ model = joblib.load("rfiris.pkl")
 
 
 
-st.title(" IRIS FLOWER CLASSIFICATION APPLICATION")
+st.title("IRIS FLOWER CLASSIFICATION APPLICATION")
 
 
 st.write("Predict the species of an Iris Flower Using a Random Forest Model")
@@ -26,14 +26,6 @@ sepal_length = form.number_input(
 
 	)
 
-petal_length = form.number_input(
-
-		"petal_length (cm)",
-		min_value= 1.0,
-		max_value= 7.0,
-		value = 5.0
-
-	)
 
 sepal_width = form.number_input(
 
@@ -43,6 +35,17 @@ sepal_width = form.number_input(
 		value = 4.0
 
 	)
+
+petal_length = form.number_input(
+
+		"petal_length (cm)",
+		min_value= 1.0,
+		max_value= 7.0,
+		value = 5.0
+
+	)
+
+
 
 petal_width = form.number_input(
 
